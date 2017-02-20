@@ -1,0 +1,7 @@
+<h2>Heroes from JSON File</h2>
+<div *ngFor="let hero of ('heroes.json' | fetchJson) ">
+  {{hero.name}}
+</div>
+<p>Heroes as JSON:
+  {{'heroes.json' | fetchJson | json}}
+</p>
